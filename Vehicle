@@ -1,0 +1,22 @@
+
+public class Vehicle {
+
+	int maxGas;
+	int mpg;
+
+	public Vehicle(int maxGas, int mpg) {
+		this.mpg = mpg;
+		this.maxGas = maxGas;
+
+	}
+	public int getRefill(int tripDistance) {
+		int refills = 1;
+		int maxDistance = mpg * maxGas;
+
+		int refillsCalc = tripDistance / maxDistance;
+
+
+		return refills + refillsCalc;
+
+	}
+}
