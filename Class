@@ -1,0 +1,13 @@
+
+public class Class {
+
+	public static void main(String[] args) {
+		Vehicle V1 = new Vehicle(20, 20);
+		Vehicle V2 = new Vehicle(30, 30);
+
+		//getRefill takes total distance.
+		System.out.println(V1.getRefill(1000));
+		System.out.println(V2.getRefill(2000));
+	}
+
+}
